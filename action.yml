@@ -2,8 +2,8 @@ name: 'Airdb Actions'
 description: 'Get started with Container actions'
 author: 'GitHub'
 branding:
-  icon: 'airdb'
-  color: 'blue'
+  color: 'yellow'
+  icon: 'bell'
 
 inputs: 
   myInput:
