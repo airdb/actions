@@ -1,6 +1,10 @@
 name: 'Airdb Actions'
 description: 'Get started with Container actions'
 author: 'GitHub'
+branding:
+  icon: 'login.svg'
+  color: 'blue'
+
 inputs: 
   myInput:
     description: 'Input to use'
