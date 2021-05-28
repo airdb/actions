@@ -4,6 +4,12 @@ env
 
 checkout
 
+install_gh
+
+gh repo list airdb
+
+gh repo clone airdb/scf-noah
+
 apt update
 apt install -y hugo 
 hugo version
