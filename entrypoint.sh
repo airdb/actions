@@ -1,12 +1,8 @@
 #!/bin/bash -l
 
 env
-git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY $GITHUB_REPOSITORY
-cd $GITHUB_REPOSITORY
-git checkout $GITHUB_REF
 
-pwd
-ls -lt
+checkout
 
 apt update
 apt install -y hugo 
@@ -20,6 +16,14 @@ function install_gh() {
 	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 	apt update
 	apt install -y gh
+}
+
+function checkout() {
+	git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY $GITHUB_REPOSITORY
+	cd $GITHUB_REPOSITORY
+	git checkout $GITHUB_REF
+	pwd
+	ls -lt
 }
 
 function release_gh_page() {
