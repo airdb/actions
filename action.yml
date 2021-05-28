@@ -1,3 +1,4 @@
+# https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
 name: 'Airdb Actions'
 description: 'Airdb Container Actions'
 author: 'deancn'
@@ -12,7 +13,8 @@ inputs:
     default: 'bash -x /entrypoint.sh'
 runs:
   using: 'docker'
-  image: 'docker://airdb/actions'
+  #image: 'docker://airdb/actions'
+  image: 'Dockerfile'
   env:
     GITHUB_TOKEN: $GITHUB_TOKEN
   args:
