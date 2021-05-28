@@ -12,7 +12,7 @@ inputs:
     default: 'bash -x /entrypoint.sh'
 runs:
   using: 'docker'
-  image: 'docker://airdb/ubuntu'
+  image: 'docker://airdb/actions'
   env:
     GITHUB_TOKEN: $GITHUB_TOKEN
   args:
