@@ -9,7 +9,7 @@ branding:
 inputs: 
   myCommand:
     description: 'airdb github command'
-    default: 'issue'
+    default: 'entrypoint.sh'
 runs:
   using: 'docker'
   image: 'docker://airdb/ubuntu'
