@@ -1,4 +1,4 @@
-name: "test env"
+name: "airdb-actions"
 on:
   push:
 
@@ -9,6 +9,8 @@ jobs:
 
       - name: airdb actions
         id: actionID
-        uses: airdb/actions@master
+        uses: airdb/actions@main
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+           myCommand: "bash -x /entrypoint.sh github-pages"
