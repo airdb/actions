@@ -1,12 +1,19 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Airdb Actions'
+description: 'Airdb Container Actions'
+author: 'deancn'
+
+branding:
+  color: 'yellow'
+  icon: 'bell'
+
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  myCommand:
+    description: 'airdb github command'
+    default: 'issue'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://airdb/github'
+  env:
+    GITHUB_TOKEN: $GITHUB_TOKEN
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.myCommand }}
