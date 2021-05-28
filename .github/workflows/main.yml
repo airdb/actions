@@ -1,0 +1,14 @@
+name: "test env"
+on:
+  push:
+
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: airdb actions
+        id: actionID
+        uses: airdb/actions@master
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
