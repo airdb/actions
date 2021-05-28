@@ -9,6 +9,6 @@ jobs:
 
       - name: airdb actions
         id: actionID
-        uses: airdb/actions@master
+        uses: airdb/actions@v0.0.2
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
