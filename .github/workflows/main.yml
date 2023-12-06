@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  actions:
+  actions/test:
     runs-on: ubuntu-latest
     steps:
       - name: airdb actions
