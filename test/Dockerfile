@@ -1,6 +1,6 @@
 # docker build -t airdb/actions .
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 #COPY LICENSE README.md /
 

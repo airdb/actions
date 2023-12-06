@@ -1,4 +1,4 @@
-# 🚀 Airdb's GitHub Actions
+# Airdb Container Action
 
 To get started, click the `Use this template` button on this repository [which will create a new repository based on this template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
 
@@ -26,11 +26,7 @@ jobs:
 
       - name: airdb actions
         id: actionID
-        uses: airdb/actions@main
+        uses: airdb/actions/test@main
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
-
-## Reference: 
-- https://github.com/Homebrew/actions
-
