@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  actions/test:
+  actions_test:
     runs-on: ubuntu-latest
     steps:
       - name: actions_test
