@@ -1,4 +1,4 @@
-name: "airdb-actions"
+name: "actions_test"
 on:
   push:
 
@@ -6,7 +6,7 @@ jobs:
   actions/test:
     runs-on: ubuntu-latest
     steps:
-      - name: airdb actions
+      - name: actions_test
         id: actionID
         uses: airdb/actions/test@main
         env:
