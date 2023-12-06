@@ -6,11 +6,10 @@ jobs:
   actions:
     runs-on: ubuntu-latest
     steps:
-
       - name: airdb actions
         id: actionID
-        uses: airdb/actions@main
+        uses: airdb/actions/test@main
         env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-           myCommand: "bash -x /entrypoint.sh github-pages"
+          myCommand: "bash -x /entrypoint.sh github-pages"
