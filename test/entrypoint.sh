@@ -32,18 +32,13 @@ function release_gh_page {
 
 
 # main
+echo "========Welcome to use github action dockerfile."
 env
 
 checkout
 
 install_gh
 
-gh repo list airdb
+gh repo list bbhj
 
-gh repo clone airdb/scf-noah
-
-apt update
-apt install -y hugo
-hugo version
-
-echo "Welcome to use dockerfile."
+echo "========Finish to use github action dockerfile."
